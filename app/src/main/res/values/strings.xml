@@ -1,3 +1,42 @@
 <resources>
     <string name="app_name">SteelCalculator</string>
+    <string name="drawer_item_home">Calculator</string>
+    <string name="drawer_item_contact">Contact Us</string>
+    
+    <string name="outer_wall_length_str">Total length of outer walls</string>
+    <string name="length_of_spine_str">Total length of spine walls (if any)</string>
+    <string name="number_of_corners_str">Total number of corners</string>
+    <string name="jobTitleStr">Job Title</string>
+    <string name="customerStr">Customer</string>
+
+    <string name="barNoStr">Bar Mark</string>
+    <string name="noOfBarStr">No. of bars</string>
+    <string name="sizeStr">Size</string>
+    <string name="shapeStr">Shape</string>
+    <string name="scodeStr">S-Code</string>
+    <string name="lengthStr">Length mm</string>
+    <string name="dimA">Dim. A</string>
+    <string name="dimB">Dim. B</string>
+    <string name="dimC">Dim. C</string>
+    <string name="weightStr">Weight Kg</string>
+    <string name="spacingStr">Spacing</string>
+    <string name="positionStr">Position</string>
+    <string name="totalTonnageStr">Total tonnage</string>
+    <string name="tonneStr">Tonne</string>
+    <string name="metresStr">Metres</string>
+    <string name="calcStr">Calculate</string>
+
+    <string name="showDetailedStr">Show Detailed Calculation</string>
+
+    <string name="selectCalculationType">Select Calculation Type</string>
+    <string name="nameOne">2.4m high X 225mm thick walls</string>
+    <string name="nameTwo">2.4m high X 300mm thick walls</string>
+    <string name="nameThree">2.7m high X 225mm thick walls</string>
+    <string name="nameFour">2.7m high X 300mm thick walls</string>
+    <string name="nameFive">3m high X 225mm thick walls</string>
+    <string name="nameSix">3m high X 300mm thick walls</string>
+    <string name="metric">Metric Convertor</string>
+    <string name="Concrete">Concrete</string>
+    <string name="saveBtn">Save</string>
+
 </resources>

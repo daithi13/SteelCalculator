@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/contactTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textSize="24sp"
+        android:fontFamily="@font/quicksand_regular"
+        android:textColor="@color/md_black_1000"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/contactMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: 08511111111"
+        android:textSize="24sp"
+        android:fontFamily="@font/quicksand_regular"
+        android:textColor="@color/md_black_1000"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <TextView
+        android:id="@+id/contactEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: johnmanning@email.com"
+        android:textSize="24sp"
+        android:fontFamily="@font/quicksand_regular"
+        tools:layout_editor_absoluteX="94dp"
+        android:textColor="@color/md_black_1000"
+        tools:layout_editor_absoluteY="246dp" />
+</android.support.constraint.ConstraintLayout>

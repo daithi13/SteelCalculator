@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/stripeView"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <com.stripe.android.view.CardInputWidget
+            android:id="@+id/card_input_widget"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </FrameLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/calTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand_regular"
+                android:text="TextView"
+                android:textColor="@color/md_black_1000" />
+
+            <TextView
+                android:id="@+id/lengthOfWallLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/calTitle"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand_regular"
+                android:text="@string/outer_wall_length_str"
+                android:textColor="@color/md_black_1000" />
+
+            <EditText
+                android:id="@+id/lengthOfWallInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/lengthOfWallLabel"
+                android:layout_alignStart="@+id/lengthOfWallLabel"
+                android:layout_below="@+id/lengthOfWallLabel"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/mesurementTypeForOuterWallLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/lengthOfWallInput"
+                android:layout_alignBottom="@+id/lengthOfWallInput"
+                android:layout_toEndOf="@+id/lengthOfWallInput"
+                android:layout_toRightOf="@+id/lengthOfWallInput"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/quicksand_regular"
+                android:text="@string/metresStr"
+                android:textColor="@color/md_black_1000" />
+
+            <TextView
+                android:id="@+id/lengthOfSpineLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/lengthOfWallInput"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand_regular"
+                android:text="@string/length_of_spine_str"
+                android:textColor="@color/md_black_1000" />
+
+            <EditText
+                android:id="@+id/lengthOfSpineInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/lengthOfSpineLbl"
+                android:layout_alignStart="@+id/lengthOfSpineLbl"
+                android:layout_below="@+id/lengthOfSpineLbl"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/mesurementTypeForSpinesLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/lengthOfSpineInput"
+                android:layout_alignBottom="@+id/lengthOfSpineInput"
+                android:layout_toEndOf="@+id/lengthOfSpineInput"
+                android:layout_toRightOf="@+id/lengthOfSpineInput"
+                android:layout_marginLeft="10dp"
+                android:text="@string/metresStr"
+                android:textColor="@color/md_black_1000"
+                android:fontFamily="@font/quicksand_regular"/>
+
+            <TextView
+                android:id="@+id/numberOfCornersLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/lengthOfSpineInput"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand_regular"
+                android:text="@string/number_of_corners_str"
+                android:textColor="@color/md_black_1000" />
+
+            <EditText
+                android:id="@+id/numberOfCornersInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/numberOfCornersLbl"
+                android:layout_alignStart="@+id/numberOfCornersLbl"
+                android:layout_below="@+id/numberOfCornersLbl"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/jobTitleLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/numberOfCornersInput"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand_regular"
+                android:text="@string/jobTitleStr"
+                android:textColor="@color/md_black_1000" />
+
+            <EditText
+                android:id="@+id/jobTitleInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/jobTitleLbl"
+                android:layout_alignStart="@+id/jobTitleLbl"
+                android:layout_below="@+id/jobTitleLbl"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/customerLbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/jobTitleInput"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand_regular"
+                android:text="@string/customerStr"
+                android:textColor="@color/md_black_1000" />
+
+            <EditText
+                android:id="@+id/customerInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/customerLbl"
+                android:layout_alignStart="@+id/customerLbl"
+                android:layout_below="@+id/customerLbl"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/calcBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/customerInput"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/md_black_1000"
+                android:fontFamily="@font/quicksand_regular"
+                android:text="@string/calcStr" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/calculationView"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calcBtn"
+                android:padding="5dp">
+
+                <include layout="@layout/calculation_container"/>
+
+            </android.support.v4.widget.NestedScrollView>
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/md_black_1000"
+                android:fontFamily="@font/quicksand_regular"
+                android:layout_below="@id/calculationView"
+                android:id="@+id/tonnageOutput"
+                android:layout_margin="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tonnageOutput"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:visibility="invisible"
+                    android:id="@+id/showDetailedResultsBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/showDetailedStr"
+                    android:textColor="@color/md_black_1000"
+                    android:background="@drawable/button_highlighter"
+                    />
+
+                <Button
+                    android:visibility="invisible"
+                    android:id="@+id/saveBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:fontFamily="@font/quicksand_regular"
+                    android:text="@string/saveBtn"
+                    android:textColor="@color/md_black_1000"
+                    android:background="@drawable/button_highlighter"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

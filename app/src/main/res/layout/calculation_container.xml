@@ -1,0 +1,1218 @@
+ <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/GridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignBounds"
+        android:columnCount="12"
+        android:columnOrderPreserved="true"
+        android:rowCount="10"
+        android:padding="5dp"
+        android:useDefaultMargins="true"
+        android:orientation="horizontal">
+<!-- Column Names -->
+        <TextView
+            android:id="@+id/barMarkLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/barNoStr"
+            android:textColor="@color/md_black_1000" />
+
+        <TextView
+            android:id="@+id/noOfBarLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/noOfBarStr"
+            android:textColor="@color/md_black_1000" />
+
+        <TextView
+            android:id="@+id/sizeLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/sizeStr"
+            android:textColor="@color/md_black_1000" />
+
+        <TextView
+            android:id="@+id/shapeLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/shapeStr"
+            android:textColor="@color/md_black_1000" />
+
+        <TextView
+            android:id="@+id/sCodeLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/scodeStr"
+            android:textColor="@color/md_black_1000" />
+
+        <TextView
+            android:id="@+id/lengthLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="5"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/lengthStr"
+            android:textColor="@color/md_black_1000" />
+
+        <TextView
+            android:id="@+id/dimALbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="6"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/dimA"
+            android:textColor="@color/md_black_1000" />
+
+        <TextView
+            android:id="@+id/dimBLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="7"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/dimB"
+            android:textColor="@color/md_black_1000" />
+
+        <TextView
+            android:id="@+id/dimCLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="8"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/dimC"
+            android:textColor="@color/md_black_1000" />
+
+        <TextView
+            android:id="@+id/weightLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="9"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/weightStr"
+            android:textColor="@color/md_black_1000" />
+
+        <TextView
+            android:id="@+id/spacingLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="10"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/spacingStr"
+            android:textColor="@color/md_black_1000" />
+
+        <TextView
+            android:id="@+id/positionLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="11"
+            android:layout_gravity="center"
+            android:layout_row="1"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/positionStr"
+            android:textColor="@color/md_black_1000" />
+<!-- Bar Mark -->
+        <TextView
+            android:id="@+id/barMark1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_gravity="center"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="1"
+            android:textColor="@color/md_black_1000" />
+
+     <TextView
+         android:id="@+id/barMark2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_column="0"
+         android:layout_row="3"
+         android:layout_gravity="center"
+         android:fontFamily="@font/quicksand_regular"
+         android:text="2"
+         android:textColor="@color/md_black_1000"/>
+     <TextView
+         android:id="@+id/barMark3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_column="0"
+         android:layout_row="4"
+         android:layout_gravity="center"
+         android:fontFamily="@font/quicksand_regular"
+         android:text="3"
+         android:textColor="@color/md_black_1000"/>
+
+     <TextView
+         android:id="@+id/barMark4"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_column="0"
+         android:layout_row="5"
+         android:layout_gravity="center"
+         android:fontFamily="@font/quicksand_regular"
+         android:text="4"
+         android:textColor="@color/md_black_1000"/>
+
+     <TextView
+         android:id="@+id/barMark5"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_column="0"
+         android:layout_row="6"
+         android:layout_gravity="center"
+         android:fontFamily="@font/quicksand_regular"
+         android:text="5"
+         android:textColor="@color/md_black_1000"/>
+
+     <TextView
+         android:id="@+id/barMark6"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_column="0"
+         android:layout_row="7"
+         android:layout_gravity="center"
+         android:fontFamily="@font/quicksand_regular"
+         android:text="6"
+         android:textColor="@color/md_black_1000"/>
+
+     <TextView
+         android:id="@+id/barMark7"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_column="0"
+         android:layout_row="8"
+         android:layout_gravity="center"
+         android:fontFamily="@font/quicksand_regular"
+         android:text="7"
+         android:textColor="@color/md_black_1000"/>
+
+     <TextView
+         android:id="@+id/barMark8"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_column="0"
+         android:layout_row="9"
+         android:layout_gravity="center"
+         android:fontFamily="@font/quicksand_regular"
+         android:text="8"
+         android:textColor="@color/md_black_1000"/>
+
+     <!-- no. of bars -->
+     <TextView
+         android:id="@+id/noOfBarFor1"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="1"
+         android:layout_row="2"
+         android:fontFamily="@font/quicksand_regular"
+         android:text="0"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"/>
+
+     <TextView
+         android:id="@+id/noOfBarFor2"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="1"
+         android:layout_row="3"
+         android:fontFamily="@font/quicksand_regular"
+         android:text="0"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"/>
+
+     <TextView
+         android:id="@+id/noOfBarFor3"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="1"
+         android:layout_row="4"
+         android:fontFamily="@font/quicksand_regular"
+         android:text="0"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"/>
+
+     <TextView
+         android:id="@+id/noOfBarFor4"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="1"
+         android:layout_row="5"
+         android:fontFamily="@font/quicksand_regular"
+         android:text="0"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"/>
+
+     <TextView
+         android:id="@+id/noOfBarFor5"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="1"
+         android:layout_row="6"
+         android:fontFamily="@font/quicksand_regular"
+         android:text="0"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"/>
+
+     <TextView
+         android:id="@+id/noOfBarFor6"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="1"
+         android:layout_row="7"
+         android:fontFamily="@font/quicksand_regular"
+         android:text="0"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"/>
+
+     <TextView
+         android:id="@+id/noOfBarFor7"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="1"
+         android:layout_row="8"
+         android:fontFamily="@font/quicksand_regular"
+         android:text="0"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"/>
+
+     <TextView
+         android:id="@+id/noOfBarFor8"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="1"
+         android:layout_row="9"
+         android:fontFamily="@font/quicksand_regular"
+         android:text="0"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"/>
+
+     <!-- Size -->
+
+     <TextView
+         android:id="@+id/size1"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="2"
+         android:layout_row="2"
+         android:text="T12"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/size2"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="2"
+         android:layout_row="3"
+         android:text="T16"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/size3"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="2"
+         android:layout_row="4"
+         android:text="T16"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/size4"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="2"
+         android:layout_row="5"
+         android:text="T16"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/size5"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="2"
+         android:layout_row="6"
+         android:text="T16"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/size6"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="2"
+         android:layout_row="7"
+         android:text="T12"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/size7"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="2"
+         android:layout_row="8"
+         android:text="T16"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/size8"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="2"
+         android:layout_row="9"
+         android:text="T16"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <!-- Shape -->
+
+     <TextView
+         android:id="@+id/shape1"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="3"
+         android:layout_row="2"
+         android:text="U BAR"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/shape2"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="3"
+         android:layout_row="3"
+         android:text="U BAR"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/shape3"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="3"
+         android:layout_row="4"
+         android:text="J BAR"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/shape4"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="3"
+         android:layout_row="5"
+         android:text="U BAR"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/shape5"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="3"
+         android:layout_row="6"
+         android:text="L BAR"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/shape6"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="3"
+         android:layout_row="7"
+         android:text="straight"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/shape7"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="3"
+         android:layout_row="8"
+         android:text="J BAR"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/shape8"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="3"
+         android:layout_row="9"
+         android:text="U BAR"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <!-- S-Code -->
+     <TextView
+         android:id="@+id/code1"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="4"
+         android:layout_row="2"
+         android:text="21"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/code2"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="4"
+         android:layout_row="3"
+         android:text="21"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/code3"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="4"
+         android:layout_row="4"
+         android:text="13"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/code4"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="4"
+         android:layout_row="5"
+         android:text="21"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/code5"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="4"
+         android:layout_row="6"
+         android:text="11"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/code6"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="4"
+         android:layout_row="7"
+         android:text="0"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/code7"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="4"
+         android:layout_row="8"
+         android:text="13"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/code8"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="4"
+         android:layout_row="9"
+         android:text="21"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <!-- Length -->
+
+     <TextView
+         android:id="@+id/length1"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="5"
+         android:layout_row="2"
+         android:text="3100"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/length2"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="5"
+         android:layout_row="3"
+         android:text="5125"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/length3"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="5"
+         android:layout_row="4"
+         android:text="3325"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/length4"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="5"
+         android:layout_row="5"
+         android:text="1910"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/length5"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="5"
+         android:layout_row="6"
+         android:text="3200"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/length6"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="5"
+         android:layout_row="7"
+         android:text="6000"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/length7"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="5"
+         android:layout_row="8"
+         android:text="3400"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/length8"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="5"
+         android:layout_row="9"
+         android:text="3100"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <!-- DIMA -->
+
+     <TextView
+         android:id="@+id/dima1"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="6"
+         android:layout_row="2"
+         android:text="1500"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dima2"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="6"
+         android:layout_row="3"
+         android:text="2500"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dima3"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="6"
+         android:layout_row="4"
+         android:text="2100"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dima4"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="6"
+         android:layout_row="5"
+         android:text="900"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dima5"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="6"
+         android:layout_row="6"
+         android:text="2500"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dima6"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="6"
+         android:layout_row="7"
+         android:text="6000"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dima7"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="6"
+         android:layout_row="8"
+         android:text="2100"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dima8"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="6"
+         android:layout_row="9"
+         android:text="1500"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <!-- DIMB -->
+
+     <TextView
+         android:id="@+id/dimb1"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="7"
+         android:layout_row="2"
+         android:text="100"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dimb2"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="7"
+         android:layout_row="3"
+         android:text="125"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dimb3"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="7"
+         android:layout_row="4"
+         android:text="125"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dimb4"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="7"
+         android:layout_row="5"
+         android:text="110"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dimb5"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="7"
+         android:layout_row="6"
+         android:text="700"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dimb6"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="7"
+         android:layout_row="7"
+         android:text="---"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dimb7"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="7"
+         android:layout_row="8"
+         android:text="200"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dimb8"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="7"
+         android:layout_row="9"
+         android:text="100"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <!-- DIMC -->
+
+     <TextView
+         android:id="@+id/dimc1"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="8"
+         android:layout_row="2"
+         android:text="1500"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dimc2"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="8"
+         android:layout_row="3"
+         android:text="2500"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dimc3"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="8"
+         android:layout_row="4"
+         android:text="1100"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dimc4"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="8"
+         android:layout_row="5"
+         android:text="900"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dimc5"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="8"
+         android:layout_row="6"
+         android:text="---"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dimc6"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="8"
+         android:layout_row="7"
+         android:text="---"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dimc7"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="8"
+         android:layout_row="8"
+         android:text="1100"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/dimc8"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="8"
+         android:layout_row="9"
+         android:text="1500"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <!-- Weight -->
+     <TextView
+         android:id="@+id/weight1"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="9"
+         android:layout_row="2"
+         android:text="0"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/weight2"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="9"
+         android:layout_row="3"
+         android:text="0"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/weight3"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="9"
+         android:layout_row="4"
+         android:text="0"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/weight4"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="9"
+         android:layout_row="5"
+         android:text="0"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/weight5"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="9"
+         android:layout_row="6"
+         android:text="0"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/weight6"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="9"
+         android:layout_row="7"
+         android:text="0"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/weight7"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="9"
+         android:layout_row="8"
+         android:text="0"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/weight8"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="9"
+         android:layout_row="9"
+         android:text="0"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <!-- Spacing -->
+     <TextView
+         android:id="@+id/spacing1"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="10"
+         android:layout_row="2"
+         android:text="270mm"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/spacing2"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="10"
+         android:layout_row="3"
+         android:text="270mm"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/spacing3"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="10"
+         android:layout_row="4"
+         android:text="270mm"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/spacing4"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="10"
+         android:layout_row="5"
+         android:text="400mm"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/spacing5"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="10"
+         android:layout_row="6"
+         android:text="---"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/spacing6"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="10"
+         android:layout_row="7"
+         android:text="400mm"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/spacing7"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="10"
+         android:layout_row="8"
+         android:text="440mm"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/spacing8"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="10"
+         android:layout_row="9"
+         android:text="440mm"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <!-- Position -->
+     <TextView
+         android:id="@+id/position1"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="11"
+         android:layout_row="2"
+         android:text="Floor"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/position2"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="11"
+         android:layout_row="3"
+         android:text="Raising Corners"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/position3"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="11"
+         android:layout_row="4"
+         android:text="Wall"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/position4"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="11"
+         android:layout_row="5"
+         android:text="Corners"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/position5"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="11"
+         android:layout_row="6"
+         android:text="Corners"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/position6"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="11"
+         android:layout_row="7"
+         android:text="Floor and Wall"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/position7"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="11"
+         android:layout_row="8"
+         android:text="Spine wall"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+     <TextView
+         android:id="@+id/position8"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_column="11"
+         android:layout_row="9"
+         android:text="Spine floor"
+         android:layout_gravity="center"
+         android:textColor="@color/md_black_1000"
+         android:fontFamily="@font/quicksand_regular"/>
+
+    </GridLayout>

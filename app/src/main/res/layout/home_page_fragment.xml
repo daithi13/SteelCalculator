@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="@string/selectCalculationType"
+        android:textAlignment="center"
+        android:textColor="@color/md_black_1000" />
+
+    <LinearLayout
+        android:id="@+id/rowOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleLbl"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn24by225"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/nameOne"
+            android:textColor="@color/md_black_1000"
+            android:background="@drawable/button_highlighter"
+            />
+
+        <Button
+            android:id="@+id/btn24by300"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/nameTwo"
+            android:textColor="@color/md_black_1000"
+            android:background="@drawable/button_highlighter"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rowOne"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn27by225"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/nameThree"
+            android:background="@drawable/button_highlighter"
+            android:textColor="@color/md_black_1000"
+            />
+
+        <Button
+            android:id="@+id/btn27by300"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/nameFour"
+            android:background="@drawable/button_highlighter"
+            android:textColor="@color/md_black_1000"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rowTwo"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn30by225"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/quicksand_regular"
+            android:background="@drawable/button_highlighter"
+            android:text="@string/nameFive"
+            android:textColor="@color/md_black_1000"
+            />
+
+        <Button
+            android:id="@+id/btn30by300"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/quicksand_regular"
+            android:text="@string/nameSix"
+            android:background="@drawable/button_highlighter"
+            android:textColor="@color/md_black_1000"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rowThree"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/metricSwitch"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="@string/metric"
+            android:textColor="@color/md_black_1000"
+            android:fontFamily="@font/quicksand_regular"/>
+
+        <Switch
+            android:id="@+id/concreteSwitch"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="@string/Concrete"
+            android:textColor="@color/md_black_1000"
+            android:fontFamily="@font/quicksand_regular"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/quicksand_regular"
+        android:text="@string/calcStr"
+        android:textColor="@color/md_black_1000" />
+
+
+
+</RelativeLayout>
